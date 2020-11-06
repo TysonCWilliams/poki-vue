@@ -1,11 +1,11 @@
 <template>
   <div class="about container-fluid text-center">
-    <div class="row border border-rounded border-primary">
+    <div class="row border border-rounded border-primary justify-content-center">
       <h1>Welcome {{ profile.name }}</h1>
       <img class="rounded" :src="profile.picture" alt="" />
       <p>{{ profile.email }}</p>
     </div>
-    <div class="row">
+    <div class="row justify-content-center border border-warning my-5">
       <h1>Pokemon</h1>
     </div>
     <div class="row justify-content-between mx-2">

@@ -1,5 +1,5 @@
 <template>
-  <div class="pokemon-page col-3 card m-2 py-3 border border-danger bg-dark text-danger">
+  <div class="pokemon-page col-3 card m-2 py-3 border border-danger bg-dark">
     <router-link :to="{name: 'ActivePokemon' , params: {pokemonName: pokemonProp.name}}">
       {{ pokemon.name }}
     </router-link>
