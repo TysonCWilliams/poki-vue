@@ -1,10 +1,16 @@
 <template>
-  <div class="about text-center">
-    <h1>Welcome {{ profile.name }}</h1>
-    <img class="rounded" :src="profile.picture" alt="" />
-    <p>{{ profile.email }}</p>
-    <h1>Pokemon</h1>
-    <pokemonComponent v-for="pokemon in pokemon" :pokemon-prop="pokemon" :key="pokemon.name" />
+  <div class="about container-fluid text-center">
+    <div class="row border border-rounded border-primary">
+      <h1>Welcome {{ profile.name }}</h1>
+      <img class="rounded" :src="profile.picture" alt="" />
+      <p>{{ profile.email }}</p>
+    </div>
+    <div class="row">
+      <h1>Pokemon</h1>
+    </div>
+    <div class="row justify-content-between mx-2">
+      <pokemonComponent v-for="pokemon in pokemon" :pokemon-prop="pokemon" :key="pokemon.name" />
+    </div>
   </div>
 </template>
 
@@ -30,5 +36,10 @@ export default {
 <style scoped>
 img {
   max-width: 100px;
+}
+
+.about{
+  min-height: 100vh;
+  background-color: rgb(88, 90, 88);
 }
 </style>

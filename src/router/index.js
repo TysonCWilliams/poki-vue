@@ -4,6 +4,7 @@ import Home from '../pages/Home.vue'
 // @ts-ignore
 import Profile from '../pages/Profile.vue'
 import { Auth0Provider } from '@bcwdev/auth0provider-client'
+// @ts-ignore
 import ActivePokemonPage from '../pages/ActivePokemonPage'
 
 const routes = [
